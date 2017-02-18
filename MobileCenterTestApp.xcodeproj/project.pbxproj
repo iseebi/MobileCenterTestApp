@@ -12,9 +12,11 @@
 		82CAB0241E57E68D003F0051 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 82CAB0221E57E68D003F0051 /* Main.storyboard */; };
 		82CAB0261E57E68D003F0051 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 82CAB0251E57E68D003F0051 /* Assets.xcassets */; };
 		82CAB0291E57E68D003F0051 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 82CAB0271E57E68D003F0051 /* LaunchScreen.storyboard */; };
+		94080756C0E3540DE2D634A9 /* Pods_MobileCenterTestApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E6B6C3E10D7EEFF1200D8231 /* Pods_MobileCenterTestApp.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2872BE375720DF0B4FF3FAE5 /* Pods-MobileCenterTestApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MobileCenterTestApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MobileCenterTestApp/Pods-MobileCenterTestApp.debug.xcconfig"; sourceTree = "<group>"; };
 		82CAB01B1E57E68D003F0051 /* MobileCenterTestApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MobileCenterTestApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		82CAB01E1E57E68D003F0051 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		82CAB0201E57E68D003F0051 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +24,8 @@
 		82CAB0251E57E68D003F0051 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		82CAB0281E57E68D003F0051 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		82CAB02A1E57E68D003F0051 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E6B6C3E10D7EEFF1200D8231 /* Pods_MobileCenterTestApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MobileCenterTestApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FDB876010074D0851E10DCAC /* Pods-MobileCenterTestApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MobileCenterTestApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-MobileCenterTestApp/Pods-MobileCenterTestApp.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +33,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				94080756C0E3540DE2D634A9 /* Pods_MobileCenterTestApp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		33C14ED5CF96B7435CB03127 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E6B6C3E10D7EEFF1200D8231 /* Pods_MobileCenterTestApp.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		488854775D4E3F6A8133531C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				2872BE375720DF0B4FF3FAE5 /* Pods-MobileCenterTestApp.debug.xcconfig */,
+				FDB876010074D0851E10DCAC /* Pods-MobileCenterTestApp.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		82CAB0121E57E68C003F0051 = {
 			isa = PBXGroup;
 			children = (
 				82CAB01D1E57E68D003F0051 /* MobileCenterTestApp */,
 				82CAB01C1E57E68D003F0051 /* Products */,
+				488854775D4E3F6A8133531C /* Pods */,
+				33C14ED5CF96B7435CB03127 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -71,9 +95,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 82CAB02D1E57E68D003F0051 /* Build configuration list for PBXNativeTarget "MobileCenterTestApp" */;
 			buildPhases = (
+				BC53736E72A56C03F812DB9F /* [CP] Check Pods Manifest.lock */,
 				82CAB0171E57E68D003F0051 /* Sources */,
 				82CAB0181E57E68D003F0051 /* Frameworks */,
 				82CAB0191E57E68D003F0051 /* Resources */,
+				68D8458FA7C983E63BB19CC4 /* [CP] Embed Pods Frameworks */,
+				BE4571035DB633C79FCEC2DE /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -131,6 +158,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		68D8458FA7C983E63BB19CC4 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MobileCenterTestApp/Pods-MobileCenterTestApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BC53736E72A56C03F812DB9F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		BE4571035DB633C79FCEC2DE /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MobileCenterTestApp/Pods-MobileCenterTestApp-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		82CAB0171E57E68D003F0051 /* Sources */ = {
@@ -259,6 +334,7 @@
 		};
 		82CAB02E1E57E68D003F0051 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2872BE375720DF0B4FF3FAE5 /* Pods-MobileCenterTestApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = NARTSSS6TY;
@@ -272,6 +348,7 @@
 		};
 		82CAB02F1E57E68D003F0051 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FDB876010074D0851E10DCAC /* Pods-MobileCenterTestApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = NARTSSS6TY;
