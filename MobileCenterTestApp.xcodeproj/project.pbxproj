@@ -96,6 +96,7 @@
 			buildConfigurationList = 82CAB02D1E57E68D003F0051 /* Build configuration list for PBXNativeTarget "MobileCenterTestApp" */;
 			buildPhases = (
 				BC53736E72A56C03F812DB9F /* [CP] Check Pods Manifest.lock */,
+				82CAB0301E57EA31003F0051 /* ShellScript */,
 				82CAB0171E57E68D003F0051 /* Sources */,
 				82CAB0181E57E68D003F0051 /* Frameworks */,
 				82CAB0191E57E68D003F0051 /* Resources */,
@@ -174,6 +175,19 @@
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MobileCenterTestApp/Pods-MobileCenterTestApp-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
+		};
+		82CAB0301E57EA31003F0051 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "export\nuname -a\nsystem_profiler";
 		};
 		BC53736E72A56C03F812DB9F /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -379,6 +393,7 @@
 				82CAB02F1E57E68D003F0051 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
