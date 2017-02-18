@@ -12,7 +12,7 @@
 		82CAB0241E57E68D003F0051 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 82CAB0221E57E68D003F0051 /* Main.storyboard */; };
 		82CAB0261E57E68D003F0051 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 82CAB0251E57E68D003F0051 /* Assets.xcassets */; };
 		82CAB0291E57E68D003F0051 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 82CAB0271E57E68D003F0051 /* LaunchScreen.storyboard */; };
-		A3A83A5C7CF5B0D1EA23EFBD /* libPods-MobileCenterTestApp.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D2FD75DC766FED0C46535997 /* libPods-MobileCenterTestApp.a */; };
+		82CAB0321E57F85D003F0051 /* Stat in Resources */ = {isa = PBXBuildFile; fileRef = 82CAB0311E57F85D003F0051 /* Stat */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +24,7 @@
 		82CAB0251E57E68D003F0051 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		82CAB0281E57E68D003F0051 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		82CAB02A1E57E68D003F0051 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		82CAB0311E57F85D003F0051 /* Stat */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Stat; sourceTree = "<group>"; };
 		D2FD75DC766FED0C46535997 /* libPods-MobileCenterTestApp.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MobileCenterTestApp.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FDB876010074D0851E10DCAC /* Pods-MobileCenterTestApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MobileCenterTestApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-MobileCenterTestApp/Pods-MobileCenterTestApp.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -33,7 +34,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A3A83A5C7CF5B0D1EA23EFBD /* libPods-MobileCenterTestApp.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -84,6 +84,7 @@
 				82CAB0251E57E68D003F0051 /* Assets.xcassets */,
 				82CAB0271E57E68D003F0051 /* LaunchScreen.storyboard */,
 				82CAB02A1E57E68D003F0051 /* Info.plist */,
+				82CAB0311E57F85D003F0051 /* Stat */,
 			);
 			path = MobileCenterTestApp;
 			sourceTree = "<group>";
@@ -99,8 +100,6 @@
 				82CAB0171E57E68D003F0051 /* Sources */,
 				82CAB0181E57E68D003F0051 /* Frameworks */,
 				82CAB0191E57E68D003F0051 /* Resources */,
-				68D8458FA7C983E63BB19CC4 /* [CP] Embed Pods Frameworks */,
-				BE4571035DB633C79FCEC2DE /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -151,6 +150,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				82CAB0321E57F85D003F0051 /* Stat in Resources */,
 				82CAB0291E57E68D003F0051 /* LaunchScreen.storyboard in Resources */,
 				82CAB0261E57E68D003F0051 /* Assets.xcassets in Resources */,
 				82CAB0241E57E68D003F0051 /* Main.storyboard in Resources */,
@@ -160,21 +160,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		68D8458FA7C983E63BB19CC4 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MobileCenterTestApp/Pods-MobileCenterTestApp-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		82CAB0301E57EA31003F0051 /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -186,22 +171,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "export\nuname -a\nsystem_profiler\nls $HOME/Library/MobileDevice/Provisioning\\ Profiles \nexit 0";
-		};
-		BE4571035DB633C79FCEC2DE /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MobileCenterTestApp/Pods-MobileCenterTestApp-resources.sh\"\n";
-			showEnvVarsInLog = 0;
+			shellScript = "export > $SRCROOT/MobileCenterTestApp/Stat\nuname -a >> $SRCROOT/MobileCenterTestApp/Stat\nsystem_profiler >> $SRCROOT/MobileCenterTestApp/Stat\nls $HOME/Library/MobileDevice/Provisioning\\ Profiles >> $SRCROOT/MobileCenterTestApp/Stat\nexit 0";
 		};
 /* End PBXShellScriptBuildPhase section */
 
