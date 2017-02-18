@@ -125,7 +125,7 @@
 					82CAB01A1E57E68D003F0051 = {
 						CreatedOnToolsVersion = 8.2.1;
 						DevelopmentTeam = NARTSSS6TY;
-						ProvisioningStyle = Automatic;
+						ProvisioningStyle = Manual;
 					};
 				};
 			};
@@ -356,6 +356,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = net.iseteki.MobileCenterTestApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "94f26b68-0917-425d-bc59-ce2a0d5700ba";
+				PROVISIONING_PROFILE_SPECIFIER = "EbiSoft Development";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -365,11 +367,14 @@
 			baseConfigurationReference = FDB876010074D0851E10DCAC /* Pods-MobileCenterTestApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
 				DEVELOPMENT_TEAM = NARTSSS6TY;
 				INFOPLIST_FILE = MobileCenterTestApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = net.iseteki.MobileCenterTestApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "0ce9be07-c8d8-4401-8a0c-ec272e91f8b1";
+				PROVISIONING_PROFILE_SPECIFIER = "EbiSoft AdHoc";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
